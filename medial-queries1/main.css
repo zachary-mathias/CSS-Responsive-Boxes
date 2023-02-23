@@ -1,3 +1,44 @@
+* {
+  border: 1px solid black;
+}
+
 body {
-  background: blanchedalmond;
+  background-color: #ffebcd;
+}
+
+.container {
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: x-large;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.a,
+.c {
+  flex-grow: 1;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.b {
+  flex-grow: 3;
+  min-height: 60vh;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+
+  }
 }
