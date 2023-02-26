@@ -22,14 +22,12 @@ body {
 .c {
   flex-grow: 1;
   background-color: lightgrey;
-  text-align: center;
 }
 
 .b {
   flex-grow: 3;
   min-height: 60vh;
   background-color: lightgrey;
-  text-align: center;
 }
 
 @media (min-width: 600px) {

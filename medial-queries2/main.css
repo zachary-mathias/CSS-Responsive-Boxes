@@ -1,3 +1,64 @@
 body {
   background: papayawhip;
 }
+*{
+  border:1px solid brown;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+header{
+  width:100%;
+  text-align: center;
+}
+header>.a{
+  margin:5px;
+  min-height: 190px;
+  width:100%;
+  position:relative;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+}
+section>div{
+  margin: 5px;
+  min-height: 190px;
+}
+section>.b{
+  position:relative;
+  width:100%;
+}
+section>.c, section>.d,section>.e{
+  position: relative;
+  width:30%;
+}
+aside{
+  position: relative;
+  width:100%;
+}
+aside>.f{
+  margin:5px;
+  position:relative;
+  width:100%;
+  min-height: 190px;
+}
+@media(min-width:600px){
+  section{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:70%
+  }
+  aside{
+    width:28%;
+    min-height:390px;
+
+  }
+  aside>.f{
+    min-height: 390px;
